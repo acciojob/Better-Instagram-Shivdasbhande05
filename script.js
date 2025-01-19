@@ -9,6 +9,7 @@ image.forEach((items) => {
     items.addEventListener("dragstart", (e) => {
        // console.log("Drag Start");
         draggedElemet = e.target;
+		e.target.classlist.add("selected");
     });
 
     // when drag element end triggered this event
